@@ -1,4 +1,2 @@
-var = 2 * 2
-hello
-
-print(var)
+x = 2
+print(x)
