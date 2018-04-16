@@ -67,6 +67,7 @@ date_list = []
 body_list = []
 helpful_list = []
 
+#Scraping of reviews starts here
 page = 0
 while (page < 3):
     # reviews_amazon = driver.find_elements_by_xpath(xpath_reviews)
@@ -196,7 +197,9 @@ dic = {"rating": rating_list_new,
 df = pd.DataFrame.from_dict(dic, orient='index')
 df = df.T
 df = df.drop(df.index[852:])
+
+#Saving data to json file
 df.to_json("C:/Users/Nitin/Desktop/Desktop FOlder/Study Material/Semester 2/BIA 660/Assgnmnt/Assignment 3/reviews.json")
 #df.to_csv("C:/Users/Nitin/Desktop/Desktop FOlder/Study Material/Semester 2/BIA 660/Assgnmnt/Assignment 3/reviews.csv")
 
-print(df)
+#print(df)
