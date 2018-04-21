@@ -27,7 +27,7 @@ def most_home_runs():
 
     driver.find_element_by_xpath('//*[@id="sp_hitting-0"]/fieldset[1]').click()
 
-    time.sleep(random.randint(10, 15))
+    time.sleep(random.randint(10, 20))
 
     driver.find_element_by_xpath('//*[@id="sp_hitting_season"]/option[4]').click()
 
